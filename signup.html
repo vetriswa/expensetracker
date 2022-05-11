@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js">  </script> -->
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/fb.png">
+                <img src="images/tw.png">
+                <img src="images/gp.png">
+            </div>
+            <form id="login" class="input-group" onsubmit="getLogInInfo(event)">
+                <input id="LogInEmail" type="text" class="input-field" placeholder="Email Id" required>
+                <input id="LogInPassword" type="text" class="input-field" placeholder="Enter password" required>
+                <button id="reset-pass" type="button" class="remPassBtn" onclick="resetPassword()">Forget password ? </button>
+                <button id="login-btn" type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="signup" class="input-group" onsubmit="getSignUpInfo(event)">
+                <input id="signupUserName" type="text" class="input-field" placeholder="User Name" required>
+                <input id="signupEmail" type="email" class="input-field" placeholder="Email Id" required>
+                <input id="signupUserPhNo" type="number" class="input-field" placeholder="Phone no" required>
+                <input id="signupPassword" type="text" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span>I Agree to terms & conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
