@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="userexpense.css">
+    <script src="userexpense.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Your Expense</title>
+</head>
+
+<body>
+    <h2>Your Expenses</h2>
+    <div class="table-section">
+        <div class="select-pages">
+            <h3>No of table rows per page?</h3>
+            <select name="page" id="page">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+      </select>
+            <button id="get" onclick="getDialogValue()">Get Expenses</button>
+        </div>
+        <table id="table">
+            <!-- <tr class="header-row">
+        <th class="header-item items">DATE</th>
+        <th class="header-item items">DESCRIPTION</th>
+        <th class="header-item items">CATEGORY</th>
+        <th class="header-item items">INCOME</th>
+        <th class="header-item items">EXPENSE</th>
+      </tr> -->
+            <!-- <tr class="table-rows">
+        <td class="items">2022-04-19</td>
+        <td class="items">Des one</td>
+        <td class="items icon">Food</td>
+        <td class="items">10000</td>
+        <td class="items">-Rs. 500</td>
+      </tr> -->
+            <!-- <tr class="table-rows">
+        <td class="items">2022-04-18</td>
+        <td class="items">Des two</td>
+        <td class="items icon">laptop</td>
+        <td class="items">0</td>
+        <td class="items">-Rs. 500</td>
+      </tr> -->
+        </table>
+        <section id="pagination">
+
+        </section>
+    </div>
+    <button id="download-btn" type="button" class="download-btn" onclick="verifyPremium()">Download</button>
+    <ul id="file-list" class="list" style="margin-top: 50px;">
+        <!-- <li class="minus" style="margin-left: 10px;"><a href="">Cash</a><span>-$400</span></li> -->
+    </ul>
+</body>
+
+</html>
