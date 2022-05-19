@@ -36,3 +36,4 @@ function renderLeaderboard(expenses) {
         cnt++;
         card.innerHTML += template;
     }
+}
